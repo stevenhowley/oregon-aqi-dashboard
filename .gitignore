@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+data/*
+!data/.gitkeep
+!data/us_counties.geojson
+!data/oregon_counties.geojson
+
+.DS_Store
+
+notebooks/notebooks-scratch/
