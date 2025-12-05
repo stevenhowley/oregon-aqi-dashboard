@@ -2,11 +2,13 @@ __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
+
 data/*
 !data/.gitkeep
 !data/us_counties.geojson
 !data/oregon_counties.geojson
 !data/aqs_daily_pm25_20200101_20241231.parquet
 !data/aqs_daily_ozone_20200101_20241231.parquet
+
 .DS_Store
 notebooks/notebooks-scratch/
