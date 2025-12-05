@@ -2,13 +2,14 @@ __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
-
-data/*
-!data/.gitkeep
-!data/us_counties.geojson
-!data/oregon_counties.geojson
-!data/aqs_daily_pm25_20200101_20241231.parquet
-!data/aqs_daily_ozone_20200101_20241231.parquet
-
 .DS_Store
+
+# Scratch notebooks
 notebooks/notebooks-scratch/
+
+# Optional: ignore future AirNow snapshot files if you rerun live fetches
+data/airnow_observations_or_*.parquet
+
+# Optional: ignore shapefile junk if you ever re-download it
+data/cb_2022_us_county_500k*
+data/cb_2022_us_county_500k/
