@@ -2,13 +2,11 @@
 
 
 
-This project visualizes both historical and real-time air quality data for Oregon using:
+This project visualizes historical air quality data for Oregon using:
 
 
 
-\- EPA AQS (Air Quality System) daily historical data (2020–2024)
-
-\- AirNow API real-time station-level observations (PM2.5 and Ozone)
+\- EPA AQS (Air Quality System) daily historical data for PM2.5 and Ozone (2020–2024)
 
 \- U.S. Census TIGER/Line county boundaries for Oregon
 
@@ -43,24 +41,6 @@ The main notebook (`03\_aqi\_dashboard.ipynb`) includes:
 \- Choropleth county-level maps of Oregon using Plotly
 
 \- Summary statistics showing statewide mean and best/worst counties for any selected day
-
-
-
-\### Live AirNow Observations
-
-
-
-The dashboard also fetches current PM2.5 and Ozone observations from the AirNow API and displays the latest station-level readings on a map.
-
-
-
-Set your AirNow API key as an environment variable (PowerShell example): setx AIRNOW\_KEY "your\_real\_key\_here"
-
-
-
-
-
-Restart Jupyter Notebook afterward.
 
 
 
@@ -138,7 +118,7 @@ pip install -r requirements.txt
 
 \- The `us\_counties.geojson` and derived files use public domain U.S. Census Bureau data.
 
-\- AirNow and AQS data follow EPA usage guidelines.
+\- AQS data follows EPA usage guidelines.
 
 \- No personal or sensitive information is stored in this repository.
 
@@ -151,8 +131,6 @@ pip install -r requirements.txt
 \## Future Improvements
 
 
-
-\- Deploy the interactive dashboard using Voila or Binder
 
 \- Add wildfire and smoke plume overlay data
 
