@@ -149,3 +149,13 @@ pip install -r requirements.txt
 You can launch the dashboard in your browser (via Binder + Voila) using:
 
 https://mybinder.org/v2/gh/stevenhowley/oregon-aqi-dashboard/main?urlpath=voila/render/notebooks/03_county_aqi_map_clean.ipynb
+
+
+
+---
+
+
+
+### Optional: Live AQI Fetching (AirNow API)
+For users with an AirNow API key, notebook 04_live_airnow.ipynb demonstrates how to fetch the latest hourly AQI observations.
+This notebook does not run on Binder.
