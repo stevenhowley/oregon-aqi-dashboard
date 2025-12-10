@@ -1,84 +1,184 @@
-Oregon Air Quality Dashboard (PM2.5 & Ozone)
+\# Oregon Air Quality Dashboard (PM2.5 \& Ozone)
 
-This project visualizes historical air quality data for Oregon using:
 
-EPA AQS (Air Quality System) daily historical data for PM2.5 and Ozone (2020–2024)
 
-U.S. Census TIGER/Line county boundaries for Oregon
+This project visualizes \*\*historical air quality data for Oregon\*\* using:
 
-Interactive dashboard elements built with Plotly and ipywidgets
 
-The project demonstrates skills in data engineering, API integration, geospatial preprocessing, data visualization, and interactive dashboard design in Jupyter Notebook.
 
-Features
-Interactive County-Level AQI Dashboard
+\- \*\*EPA AQS\*\* (Air Quality System) daily historical data for PM2.5 and Ozone (2020–2024)
 
-The main notebook (03_aqi_dashboard.ipynb) includes:
+\- \*\*U.S. Census TIGER/Line\*\* county boundaries for Oregon
 
-A time slider to browse historical PM2.5 and Ozone levels by date
+\- \*\*Interactive dashboard\*\* elements built with Plotly and ipywidgets
 
-A pollutant selector (PM2.5 vs. Ozone)
 
-Choropleth county-level maps of Oregon using Plotly
 
-Summary statistics showing statewide mean and best/worst counties for any selected day
+The project demonstrates skills in \*\*data engineering\*\*, \*\*API integration\*\*, \*\*geospatial preprocessing\*\*, \*\*data visualization\*\*, and \*\*interactive dashboard design\*\* in Jupyter Notebook.
 
-Oregon County GeoJSON
 
-The file data/us_counties.geojson was created from the official 2022 U.S. Census Bureau TIGER/Line shapefile:
 
-Dataset: 2022 TIGER/Line Shapefiles — Counties
+---
 
-Source: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2022.html
 
-ZIP File: cb_2022_us_county_500k.zip
 
-Notebook 01_prepare_geojson.ipynb documents the steps used to:
+\## Features
 
-Download and extract the Census county boundaries
 
-Filter to Oregon counties only (state FIPS code 41)
 
-Save a smaller, Oregon-specific GeoJSON file used by the dashboard
+\### Interactive County-Level AQI Dashboard
 
-This ensures the geospatial portion of the project is fully reproducible.
 
-Installation
 
-Install required packages:
+The main notebook \*\*`03\_aqi\_dashboard.ipynb`\*\* includes:
+
+
+
+\- A \*\*time slider\*\* to browse historical PM2.5 and Ozone levels by date
+
+\- A \*\*pollutant selector\*\* (PM2.5 vs. Ozone)
+
+\- \*\*Choropleth county-level maps\*\* of Oregon using Plotly
+
+\- \*\*Summary statistics\*\* showing statewide mean and best/worst counties for any selected day
+
+
+
+---
+
+
+
+\## Oregon County GeoJSON
+
+
+
+The file \*\*`data/us\_counties.geojson`\*\* was created from the official \*\*2022 U.S. Census Bureau TIGER/Line\*\* shapefile:
+
+
+
+\- Dataset: 2022 TIGER/Line Shapefiles — Counties  
+
+\- Source: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2022.html  
+
+\- ZIP File: `cb\_2022\_us\_county\_500k.zip`
+
+
+
+Notebook \*\*`01\_prepare\_geojson.ipynb`\*\* documents the steps to:
+
+
+
+1\. Download and extract the Census county boundaries
+
+2\. Filter to \*\*Oregon only\*\* (state FIPS code 41)
+
+3\. Save a smaller, Oregon-specific \*\*GeoJSON\*\* file used by the dashboard
+
+
+
+This ensures the geospatial workflow is \*\*fully reproducible\*\*.
+
+
+
+---
+
+
+
+\## Installation
+
+
+
+\### Using pip
+
+```bash
 
 pip install -r requirements.txt
 
 
-Or using Conda:
+
+---
+
+
+
+\### Using Conda
+
+```bash
 
 conda create -n aqi python=3.11
+
 conda activate aqi
+
 pip install -r requirements.txt
 
-License and Data Notes
 
-The us_counties.geojson and derived files use public domain U.S. Census Bureau data.
 
-AQS data follows EPA usage guidelines.
+---
 
-No personal or sensitive information is stored in this repository.
 
-Future Improvements
 
-Add wildfire and smoke plume overlay data
+\## License and Data Notes
 
-Create long-term trend graphs for each county
 
-Develop a lightweight API that serves historical county-level AQI data
 
-Live Demo
+* `us\_counties.geojson` and derived files use public domain U.S. Census Bureau data.
 
-Launch the dashboard in your browser (via Binder + Voila):
 
-https://mybinder.org/v2/gh/stevenhowley/oregon-aqi-dashboard/main?urlpath=voila/render/notebooks/03_county_aqi_map_clean.ipynb
 
-Optional: Live AQI Fetching (AirNow API)
+* AQS data follows EPA usage guidelines.
 
-For users with an AirNow API key, notebook 04_live_airnow.ipynb demonstrates how to fetch the latest hourly AQI observations.
-This notebook does not run on Binder.
+
+
+* No personal or sensitive information is stored in this repository.
+
+
+
+---
+
+
+
+\## Future Improvements
+
+
+
+* Add wildfire and smoke plume overlay data
+
+
+
+* Create long-term trend graphs for each county
+
+
+
+* Develop a lightweight API that serves historical county-level AQI data
+
+
+
+---
+
+
+
+\## Live Demo
+
+
+
+Launch the dashboard via Binder + Voila:
+
+
+
+https://mybinder.org/v2/gh/stevenhowley/oregon-aqi-dashboard/main?urlpath=voila/render/notebooks/03\_county\_aqi\_map\_clean.ipynb
+
+
+
+---
+
+
+
+\## Optional: Live AQI Fetching (AirNow API)
+
+
+
+For users with an AirNow API key, the notebook 04\_live\_airnow.ipynb demonstrates how to fetch the latest station level hourly AQI observations.
+
+
+
+This notebook does not run on Binder because Binder cannot use external environment variables.
+
