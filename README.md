@@ -56,9 +56,9 @@ The file \*\*`data/us\_counties.geojson`\*\* was created from the official \*\*2
 
 
 
-\- Dataset: 2022 TIGER/Line Shapefiles — Counties  
+\- Dataset: 2022 TIGER/Line Shapefiles — Counties
 
-\- Source: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2022.html  
+\- Source: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2022.html
 
 \- ZIP File: `cb\_2022\_us\_county\_500k.zip`
 
@@ -90,6 +90,8 @@ This ensures the geospatial workflow is \*\*fully reproducible\*\*.
 
 \### Using pip
 
+
+
 ```bash
 
 pip install -r requirements.txt
@@ -99,6 +101,8 @@ pip install -r requirements.txt
 
 
 \### Using Conda
+
+
 
 ```bash
 
@@ -120,15 +124,11 @@ pip install -r requirements.txt
 
 
 
-* `us\_counties.geojson` and derived files use public domain U.S. Census Bureau data.
+\- `us\_counties.geojson` and derived files use public domain U.S. Census Bureau data.
 
+\- AQS data follows EPA usage guidelines.
 
-
-* AQS data follows EPA usage guidelines.
-
-
-
-* No personal or sensitive information is stored in this repository.
+\- No personal or sensitive information is stored in this repository.
 
 
 
@@ -140,15 +140,11 @@ pip install -r requirements.txt
 
 
 
-* Add wildfire and smoke plume overlay data
+\- Add wildfire and smoke plume overlay data
 
+\- Create long-term trend graphs for each county
 
-
-* Create long-term trend graphs for each county
-
-
-
-* Develop a lightweight API that serves historical county-level AQI data
+\- Develop a lightweight API that serves historical county-level AQI data
 
 
 
@@ -181,4 +177,6 @@ For users with an AirNow API key, the notebook `04\_live\_airnow.ipynb` demonstr
 
 
 This notebook does not run on Binder because Binder cannot use external environment variables.
+
+
 
