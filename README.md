@@ -68,9 +68,9 @@ Notebook \*\*`01\_prepare\_geojson.ipynb`\*\* documents the steps to:
 
 
 
-1\. Download and extract the Census county boundaries
+1\. Download and extract the Census county boundaries  
 
-2\. Filter to \*\*Oregon only\*\* (state FIPS code 41)
+2\. Filter to \*\*Oregon only\*\* (state FIPS code 41)  
 
 3\. Save a smaller, Oregon-specific \*\*GeoJSON\*\* file used by the dashboard
 
@@ -94,9 +94,7 @@ This ensures the geospatial workflow is \*\*fully reproducible\*\*.
 
 pip install -r requirements.txt
 
-
-
----
+```
 
 
 
@@ -110,13 +108,15 @@ conda activate aqi
 
 pip install -r requirements.txt
 
+```
+
 
 
 ---
 
 
 
-\## License and Data Notes
+\## License and Data Notes 
 
 
 
@@ -176,7 +176,7 @@ https://mybinder.org/v2/gh/stevenhowley/oregon-aqi-dashboard/main?urlpath=voila/
 
 
 
-For users with an AirNow API key, the notebook 04\_live\_airnow.ipynb demonstrates how to fetch the latest station level hourly AQI observations.
+For users with an AirNow API key, the notebook `04\_live\_airnow.ipynb` demonstrates how to fetch the latest station-level hourly AQI observations.
 
 
 
