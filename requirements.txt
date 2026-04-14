@@ -3,5 +3,5 @@ requests
 pyarrow
 plotly
 ipywidgets
-notebook
+notebook<7
 voila
