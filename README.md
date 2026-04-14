@@ -76,7 +76,8 @@ Notebook **`01\_prepare\_geojson.ipynb`** documents the steps to:
 
 
 
-This ensures the geospatial workflow is **fully reproducible**.
+The pre-built us_counties.geojson is included in the repo — you don't need to run this notebook to use the dashboard. If you
+  want to regenerate the GeoJSON from the raw Census shapefile, you'll need geopandas installed separately.
 
 
 
