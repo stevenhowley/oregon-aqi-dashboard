@@ -14,7 +14,7 @@ This project visualizes **historical air quality data for Oregon** using:
 
 
 
-The project demonstrates skills in **data engineering**, **API integration**, **geospatial preprocessing**, **data visualization**, and **interactive dashboard design** in Jupyter Notebook.
+The project demonstrates skills in **data engineering**, **API integration**, **geospatial data visualization**, and **interactive dashboard design** in Jupyter Notebook.
 
 
 
