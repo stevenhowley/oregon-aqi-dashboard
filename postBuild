@@ -1,2 +1,2 @@
-jupyter nbextension enable --py widgetsnbextension --sys-prefix
-jupyter serverextension enable voila --sys-prefix
+#!/bin/bash
+# Extensions auto-register on install; no manual enable needed
