@@ -161,7 +161,7 @@ Launch the dashboard via Binder + Voila:
 
 
 
-https://mybinder.org/v2/gh/stevenhowley/oregon-aqi-dashboard/main?urlpath=voila/render/notebooks/03\_county\_aqi\_map\_clean.ipynb
+https://mybinder.org/v2/gh/stevenhowley/oregon-aqi-dashboard/main?urlpath=voila/render/03_county_aqi_map_clean.ipynb
 
 
 
